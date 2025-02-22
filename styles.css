@@ -1,0 +1,225 @@
+@font-face {
+    font-family: 'Megante';
+    src: url('./fonts/Megante.woff2') format('woff2'),
+         url('./fonts/Megante.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cutive Mono', monospace;
+    line-height: 1.7;
+    color: #E2E1DF;
+    background-color: #000000;
+}
+
+.main-container {
+    padding: 0 100px;
+}
+
+.nav-wrapper {
+    background: transparent;
+    padding: 3rem 0;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    gap: 3rem;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Megante', sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #E2E1DF;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #E2E1DF;
+    font-weight: 300;
+    font-family: 'Cutive Mono', monospace;
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+    white-space: nowrap;
+}
+
+/* Hero Section */
+.hero-image {
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+}
+
+
+.headline-section {
+    margin: 10rem 0;
+}
+
+.secondary-headline {
+    font-family: 'Megante', sans-serif;
+    font-size: 2rem;
+    font-weight: 200;
+    line-height: 1.2;
+    color: #41b909;
+    max-width: 800px;
+    margin-bottom: 7rem;
+}
+
+.narrow-text {
+    max-width: 700px;
+    font-size: 0.9rem;
+    line-height: 1.8;
+    color: #E2E1DF;
+    font-family: 'Cutive Mono', monospace;
+    margin-left: auto;
+}
+
+.narrow-text p + p {
+    margin-top: 2rem;
+}
+
+.narrow-text a {
+    color: #9A3943;
+    text-decoration: underline;
+    transition: opacity 0.3s ease;
+}
+
+.narrow-text a:hover {
+    opacity: 0.7;
+}
+
+
+.about-section {
+    margin: 8rem 0;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* About section */
+
+body.about-page {
+    background-color: #8D2B36;
+}
+
+.about-intro {
+    font-family: 'Cutive Mono', monospace;
+    font-size: 1rem;
+    color: #E2E1DF;
+    margin-bottom: 2rem;
+}
+
+.quote-section {
+    margin: 4rem 0;
+}
+
+.quote {
+    font-family: 'Megante', sans-serif;
+    font-size: 3rem;
+    font-weight: 200;
+    line-height: 1.2;
+    color: #E2E1DF;
+    margin-bottom: 1rem;
+}
+
+.quote-author {
+    font-family: 'Cutive Mono', monospace;
+    font-size: 1rem;
+    color: #E2E1DF;
+    margin-top: 1rem;
+}
+
+.about-content {
+    font-family: 'Cutive Mono', monospace;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #E2E1DF;
+}
+
+.about-content p {
+    margin-bottom: 2rem;
+
+}
+
+
+
+/* Video Grid */
+.video-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin: 8rem 0;
+}
+
+.video-item {
+    width: 100%;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    margin-bottom: 1rem;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+}
+
+.video-title {
+    font-family: 'Cutive Mono', monospace;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    font-weight: 500;
+    color: #E2E1DF;
+}
+
+/* Footer */
+footer {
+    background-color: transparent;
+    padding: 4rem 0;
+    color: #E2E1DF;
+    border-top: 0.3px solid #979696;
+ 
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+
+}
+
+.social-icons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social-icons a {
+    color: #E2E1DF;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.social-icons a:hover {
+    opacity: 0.7;
+}
